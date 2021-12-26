@@ -1,8 +1,8 @@
 
 from aiogram import Bot, Dispatcher, executor, types
 import pyqrcode
-
-bot = Bot(token="5037506263:AAH--AwE4FYQ-91b2kJkFi2WpUoFooOeNlM",parse_mode='HTML' )
+BOT_TOKEN = "Your bot token"
+bot = Bot(token=BOT_TOKEN,parse_mode='HTML' )
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start', 'help'])
